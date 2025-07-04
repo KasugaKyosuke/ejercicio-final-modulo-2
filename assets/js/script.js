@@ -23,11 +23,21 @@ $(document).ready(function() {
             return
         }
 
-        // Bloque de verificacion de las respuestas
+        // Bloque de verificacion de las respuestas, y activacion del cuadro que corresponda, segun se la respuesta esta correcta o no
         if (pregunta1Respuesta.value == "1") {
-            alert("Respuesta correcta!!!!")
+            $("#respuesta1Correcta").slideDown()
         } else {
-            alert("Respuesta incorrecta ToT")
+            $("#respuesta1Error").slideDown()
+        }
+        if (pregunta2Respuesta.value == "1") {
+            $("#respuesta2Correcta").slideDown()
+        } else {
+            $("#respuesta2Error").slideDown()
+        }
+        if (pregunta3Respuesta.value == "1") {
+            $("#respuesta3Correcta").slideDown()
+        } else {
+            $("#respuesta3Error").slideDown()
         }
     })
 })
