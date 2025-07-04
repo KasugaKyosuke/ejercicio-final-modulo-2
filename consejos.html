@@ -10,15 +10,45 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="text-center p-5">
-            <h1>Consejos de seguridad</h1>
+        <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Ciberseguridad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="comunes.html">Amenazas Comunes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consejos.html">Consejos de Seguridad</a>
+                    </li>
+                </ul>
+                <button class="btn btn-success me-2 botonTest" type="button" data-bs-toggle="modal" data-bs-target="#modalTest">Toma el Test</button>
+            </div>
         </div>
-        
+    </nav>
+
+    <!-- Sección Hero -->
+    <section class="hero-bg text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="display-4 mb-3"><strong>Consejos de Ciberseguridad</strong>
+                    </h1>
+                    <p class="lead mb-4"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     </header>
     <main>
-        <section>
+        <!-- <section>
             <div class="container">
                 <div class="text-center p-4 mb-4">
                     <h2>Buenas Prácticas para Protegerse en Línea</h2>
@@ -77,11 +107,81 @@
                 </li>
             </ol>
         </div>
+        </section> -->
+        <section class="container pb-4">
+                <div class="text-center p-4 mb-4">
+                    <h2>Buenas Prácticas para Protegerse en Línea</h2>
+                </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-password" role="tab" aria-controls="list-home">1.  Protege tus contraseñas:</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-software" role="tab" aria-controls="list-profile">2. Mantén tu software actualizado:</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-phishing" role="tab" aria-controls="list-messages">3. Ten cuidado con el phishing y el correo electrónico:</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-firewall" role="tab" aria-controls="list-settings">4. Utiliza un antivirus y un firewall:</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-redes" role="tab" aria-controls="list-settings">5. Utiliza redes seguras:</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-descargas" role="tab" aria-controls="list-settings">6. Ten precaución con las descargas:</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-password" role="tabpanel" aria-labelledby="list-home-list">
+                            <ol><strong>Crea contraseñas robustas, difíciles de adivinar y diferentes para cada cuenta: </strong><br> 
+                            Una contraseña robusta debe ser lo suficientemente compleja para evitar que alguien la adivine fácilmente o que pueda ser descifrada por programas automatizados (como ataques de fuerza bruta). Las características recomendadas incluyen:
+                            <br>- Al menos 12 caracteres y combinar letras mayúsculas y minúsculas, números y símbolos. <br>- Evitar palabras del diccionario o combinaciones comunes como “123456” o “password”.
+                            <br>- Además, es importante que cada cuenta tenga una contraseña única. <br> Usar la misma contraseña en múltiples sitios pone en riesgo todas tus cuentas si una de ellas se ve comprometida.</ol>
+                            <ol> <strong>Considera usar un administrador de contraseñas para almacenarlas de forma segura.</strong><br>
+                            Recordar muchas contraseñas complejas puede ser muy difícil. Para facilitar esto, puedes usar un administrador de contraseñas, que es una herramienta segura que guarda y organiza todas tus contraseñas en una bóveda cifrada.
+                            Estos programas pueden:
+                            <br>- Generar contraseñas fuertes automáticamente.
+                            <br>- Rellenar formularios de inicio de sesión por ti.
+                            <br>- Alertarte si una de tus contraseñas aparece en una filtración de datos.
+                            <br>Ejemplos populares: Bitwarden, 1Password, LastPass, KeePass, entre otros.  </ol>
+                            <ol><strong>No uses información personal fácilmente accesible como fechas de nacimiento o nombres de mascotas. </strong>
+                            Las contraseñas que contienen datos personales como tu nombre, fecha de nacimiento, nombre de tu mascota o lugar de residencia son muy débiles. Este tipo de información puede obtenerse fácilmente a través de redes sociales o búsquedas en línea.
+                            Un atacante que te conoce (o que busca información sobre ti) podría probar con estos datos primero.
+                            <br>Evita también combinaciones como: <br>- “Juan1985”<br>- “Sofi123”<br>- “Chile2024”</ol> 
+                            <ol><strong>Cambia tus contraseñas regularmente. </strong><br>Aunque ya uses contraseñas fuertes, cambiarlas periódicamente es una buena práctica para minimizar riesgos, especialmente si sospechas que una cuenta fue comprometida o si hubo una filtración de datos en algún servicio que usas.
+                            <br>Consejos:<br>- No uses versiones muy parecidas de tu contraseña anterior. <br>- Considera activar la autenticación en dos pasos (2FA) para agregar una capa extra de seguridad.</ol>
+                    </div>
+                    <div class="tab-pane fade" id="list-software" role="tabpanel" aria-labelledby="list-profile-list">
+                        <ol><strong>Asegúrate de que tu sistema operativo, navegadores y aplicaciones estén siempre actualizados con los últimos parches de seguridad.</strong><br>
+                            Los desarrolladores de sistemas operativos (como Windows, macOS, Linux), navegadores (como Chrome, Firefox, Edge) y aplicaciones (como Zoom, WhatsApp, Office, etc.) lanzan constantemente actualizaciones que corrigen vulnerabilidades de seguridad. Estas vulnerabilidades pueden ser aprovechadas por ciberatacantes para acceder a tus datos, instalar malware o controlar tu equipo sin que te des cuenta.
+                            <br><br>Mantener tu software actualizado significa: <br>- Protegerte contra nuevas amenazas. <br>- Mejorar la estabilidad del sistema y el rendimiento. <br>- Asegurarte de que tus dispositivos funcionen correctamente con los últimos estándares de seguridad.
+                        </ol>
+                        <ol><strong>Habilita las actualizaciones automáticas cuando sea posible.</strong>
+                        Una de las mejores maneras de asegurarte de que todo tu software esté protegido es activar las actualizaciones automáticas. Esto te evita tener que preocuparte por revisar manualmente si hay nuevas versiones disponibles.
+                        <br><br>Ventajas: <br>- Recibes los parches de seguridad apenas se publican. <br>- Reduces la probabilidad de que olvides actualizar una aplicación importante.
+                        <br>- Te aseguras de que incluso programas que usas poco estén protegidos. <br><br>Puedes habilitar esta opción en: <br>- Sistema operativo: Windows Update, actualizaciones automáticas de macOS, etc.
+                        <br>- Aplicaciones móviles: Desde los ajustes de Google Play o App Store.
+                        <br>Navegadores y programas de escritorio: La mayoría tienen una opción para actualizarse automáticamente o al menos recordártelo.</ol>
+                    </div>
+                    <div class="tab-pane fade" id="list-phishing" role="tabpanel" aria-labelledby="list-messages-list">
+                        <ol>No hagas clic en enlaces sospechosos ni abras archivos adjuntos de remitentes desconocidos.</ol>
+                        <ol>Verifica la dirección del remitente y busca señales de phishing, como errores ortográficos o gramaticales.</ol> 
+                        <ol><strong>¡¡¡No compartas tus datos personales!!!</strong></ol>
+                    </div>
+                    <div class="tab-pane fade" id="list-firewall" role="tabpanel" aria-labelledby="list-settings-list">
+                        <ol>Instala un software antivirus y antimalware confiable y mantenlo actualizado. </ol>
+                        <ol>Configura un firewall para proteger tu red doméstica o empresarial. </ol>
+                    </div>
+                    <div class="tab-pane fade" id="list-redes" role="tabpanel" aria-labelledby="list-settings-list">
+                        <ol>Evita las redes Wi-Fi públicas para transacciones financieras o acceso a información sensible.</ol>
+                        <ol>Si necesitas usar una red pública, considera usar una VPN para cifrar tus datos. </ol>
+                    </div>
+                    <div class="tab-pane fade" id="list-descargas" role="tabpanel" aria-labelledby="list-settings-list">
+                        <ol>Descarga software solo de fuentes confiables.</ol>
+                        <ol>Escanea los archivos descargados con un antivirus antes de abrirlos.</ol>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section>
             <div class="container">
-                <div class="text-center">
-                    <h2>test de seguridad</h2>
+                <div class="text-center pb-4">
+                    <h2>Test de seguridad</h2>
                 </div>
                 <div>
                     <!-- Button trigger modal -->
@@ -95,22 +195,22 @@
         <section>
             <div class="container">
                 <div class="text-center p-5">
-                    <h2>***Formulario de contacto***</h2>
+                    <h2>Formulario de contacto</h2>
                 </div>
                 <form>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Ingresa tu nombre:  </label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre y apellido">
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre y apellido">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Correo electrónico: </label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tucorreo@ejemplo.com">
+                        <input type="email" class="form-control" id="correo" placeholder="tucorreo@ejemplo.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Escríbenos: </label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="caja_texto" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary mb-4">Contactar</button>
+                    <button type="submit" id="boton_contactar" class="btn btn-primary mb-4">Contactar</button>
                 </form>
             </div>
 
