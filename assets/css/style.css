@@ -38,6 +38,10 @@ body {
     font-weight: 400;
 }
 
+.main-bg{
+    background-color: #f8f8f8;
+}
+
 /*Página Comunes (Las modificaciones estéticas fueron solo para testeo)*/
 
 .tarjeta-cuerpo {
