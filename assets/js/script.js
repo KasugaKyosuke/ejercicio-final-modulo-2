@@ -45,10 +45,6 @@ $(document).ready(function() {
                 return
             }
 
-            // if (testTerminado) {
-                
-            // }
-
             // Bloque de verificacion de las respuestas, y activacion del cuadro que corresponda, segun se la respuesta esta correcta o no
             if (pregunta1Respuesta.value == "1") {
                 $("#respuesta1Correcta").slideDown()
