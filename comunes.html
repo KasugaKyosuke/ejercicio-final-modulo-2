@@ -39,8 +39,8 @@
         </div>
     </nav>
 
-    <!--Título general-->
-    
+<div class="container">
+<!--Título general-->
     <header>
         <h1>Ataques cibernéticos</h1>
         <div class="ataques-ciberneticos">
@@ -49,224 +49,248 @@
         </div>
     </header>
     
-    <!--Tarjetas Virus-->
-    <div class="tarjeta">
-        <div class="tarjeta-cuerpo">
-            <h5 class="titulo-tarjeta">Malware</h5>
-            <p class="texto-tarjeta">Software malicioso diseñado con el fin de infiltrarse en sistemas informáticos.</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-malware"
-            aria-expanded="false" aria-controls="lista-malware">Tipos de Malware</button>
-        </div>
-    </div>
-    <div class="collapse" id="lista-malware">
-        <div id="lista-malware-interior">
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Virus</h5>
-                <p class="texto-tarjeta">Programas maliciosos que se adhieren a archivos o programas legítimos y se propagan de un sistema a otro.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Gusanos</h5>
-                <p class="texto-tarjeta">Programas maliciosos que se replican y propagan a través de redes sin necesidad de un archivo huésped.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Troyanos</h5>
-                <p class="texto-tarjeta">Programas maliciosos que se disfrazan de software legítimo para engañar a los usuarios y obtener acceso a sus sistemas.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Spyware</h5>
-                <p class="texto-tarjeta">Programas maliciosos que recopilan información sobre las actividades de los usuarios y la transmiten a terceros.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Ransomware</h5>
-                <p class="texto-tarjeta">Tipo de malware que cifra los archivos de una víctima y exige un rescate para desbloquearlos.</p>
-            </div>
-        </div>
-    </div>
-    </div>
+<!--Tarjetas principales-->
+    <div class="tarjetas-principales">
     
-    <!--Tarjetas Phishing-->
+    <!--Tarjeta Malware-->
+    <div class="contenedor-tarjeta">
+        <div class="tarjeta">
+            <div class="tarjeta-cuerpo">
+                <h5 class="titulo-tarjeta">Malware</h5>
+                <p class="texto-tarjeta">Software malicioso diseñado con el fin de infiltrarse en sistemas informáticos.</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-malware"
+                aria-expanded="false" aria-controls="lista-malware">Tipos de Malware</button>
+            </div>
+        </div>
 
-    <div class="tarjeta">
-        <div class="tarjeta-cuerpo">
-            <h5 class="titulo-tarjeta">Phishing</h5>
-            <p class="texto-tarjeta">Ataques que utilizan correos electrónicos o mensajes fraudulentos para engañar a los usuarios y obtener información confidencial, como contraseñas, números de tarjetas de crédito, etc.</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-phishing"
-            aria-expanded="false" aria-controls="lista-malware">Tipos de Phishing</button>
-        </div>
-    </div>
-    <div class="collapse" id="lista-phishing">
-        <div id="lista-malware-interior">
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Spear Phishing</h5>
-                <p class="texto-tarjeta">Ataques de phishing dirigidos a individuos específicos o grupos dentro de una organización.</p>
+        <!--extra malware-->
+        <div class="collapse" id="lista-malware">
+            <div id="lista-malware-interior">
+            <div class="virus">
+                <div class="tarjeta-extra-cuerpo">
+                    <h5 class="titulo-tarjeta">Virus</h5>
+                    <p class="texto-tarjeta">Programas maliciosos que se adhieren a archivos o programas legítimos y se propagan de un sistema a otro.</p>
+                </div>
+            </div>
+            <div class="virus">
+                <div class="tarjeta-extra-cuerpo">
+                    <h5 class="titulo-tarjeta">Gusanos</h5>
+                    <p class="texto-tarjeta">Programas maliciosos que se replican y propagan a través de redes sin necesidad de un archivo huésped.</p>
+                </div>
+            </div>
+            <div class="virus">
+                <div class="tarjeta-extra-cuerpo">
+                    <h5 class="titulo-tarjeta">Troyanos</h5>
+                    <p class="texto-tarjeta">Programas maliciosos que se disfrazan de software legítimo para engañar a los usuarios y obtener acceso a sus sistemas.</p>
+                </div>
+            </div>
+            <div class="virus">
+                <div class="tarjeta-extra-cuerpo">
+                    <h5 class="titulo-tarjeta">Spyware</h5>
+                    <p class="texto-tarjeta">Programas maliciosos que recopilan información sobre las actividades de los usuarios y la transmiten a terceros.</p>
+                </div>
+            </div>
+            <div class="virus">
+                <div class="tarjeta-extra-cuerpo">
+                    <h5 class="titulo-tarjeta">Ransomware</h5>
+                    <p class="texto-tarjeta">Tipo de malware que cifra los archivos de una víctima y exige un rescate para desbloquearlos.</p>
+                </div>
             </div>
         </div>
-        <div class="virus">
+    </div>    
+    </div>
+
+    <!--Tarjeta Phishing-->
+    <div class="contenedor-tarjeta">
+        <div class="tarjeta">
             <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Whaling</h5>
-                <p class="texto-tarjeta">Ataques de phishing dirigidos a altos ejecutivos o personas con acceso a información valiosa.</p>
+                <h5 class="titulo-tarjeta">Phishing</h5>
+                <p class="texto-tarjeta">Ataques que utilizan correos electrónicos o mensajes fraudulentos para engañar a los usuarios y obtener información confidencial, como contraseñas, números de tarjetas de crédito, etc.</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-phishing"
+                aria-expanded="false" aria-controls="lista-malware">Tipos de Phishing</button>
             </div>
         </div>
+
+        <!--extra phishing-->
+        <div class="collapse" id="lista-phishing">
+            <div id="lista-malware-interior">
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Spear Phishing</h5>
+                        <p class="texto-tarjeta">Ataques de phishing dirigidos a individuos específicos o grupos dentro de una organización.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Whaling</h5>
+                        <p class="texto-tarjeta">Ataques de phishing dirigidos a altos ejecutivos o personas con acceso a información valiosa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    </div>
+        
 
     <!--Tarjetas Ataques de denegación-->
+    <div class="contenedor-tarjeta">
+        <div class="tarjeta">
+            <div class="tarjeta-cuerpo">
+                <h5 class="titulo-tarjeta">Ataques de Denegación de Servicio (DoS/DDoS)</h5>
+                <p class="texto-tarjeta">intento malicioso de interrumpir el funcionamiento normal de un sistema, servicio o red al inundarlo con tráfico ilegítimo, 
+                    dejándolo inaccesible para sus usuarios legítimos</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-denegación"
+                aria-expanded="false" aria-controls="lista-malware">Tipos de Malware</button>
+            </div>
+        </div>
 
-    <div class="tarjeta">
-        <div class="tarjeta-cuerpo">
-            <h5 class="titulo-tarjeta">Ataques de Denegación de Servicio (DoS/DDoS)</h5>
-            <p class="texto-tarjeta">intento malicioso de interrumpir el funcionamiento normal de un sistema, servicio o red al inundarlo con tráfico ilegítimo, 
-                dejándolo inaccesible para sus usuarios legítimos</p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-denegación"
-            aria-expanded="false" aria-controls="lista-malware">Tipos de Malware</button>
-        </div>
-    </div>
-    <div class="collapse" id="lista-denegación">
-        <div id="lista-malware-interior">
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">DoS</h5>
-                <p class="texto-tarjeta">Ataques que sobrecargan un sistema o red con tráfico para que no pueda atender solicitudes legítimas.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">DDoS</h5>
-                <p class="texto-tarjeta">Ataques DoS que utilizan múltiples sistemas comprometidos (una <i>botnet</i>) para generar un volumen de tráfico aún mayor. </p>
+        <!--extra denegacion-->
+        <div class="collapse" id="lista-denegación">
+            <div id="lista-malware-interior">
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">DoS</h5>
+                        <p class="texto-tarjeta">Ataques que sobrecargan un sistema o red con tráfico para que no pueda atender solicitudes legítimas.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">DDoS</h5>
+                        <p class="texto-tarjeta">Ataques DoS que utilizan múltiples sistemas comprometidos (una <i>botnet</i>) para generar un volumen de tráfico aún mayor. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+        
 
     <!--Tarjetas otros ataques-->
+    <div class="contenedor-tarjeta">
+        <div class="tarjeta">
+            <div class="tarjeta-cuerpo">
+                <h5 class="titulo-tarjeta">Otros tipos de ataques</h5>
+                <p class="texto-tarjeta">Existen aún más tipos de ataques, algunos que buscan vulnerabilidades existentes en sitios web o aplicaciones y otros 
+                    que no necesariamente están relacionados al uso de software, pero que aún así
+                    están enfocados en la búsqueda del acceso y robo de información.
+                </p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-mitm"
+                aria-expanded="false" aria-controls="lista-malware">Ver lista</button>
+            </div>
+        </div>
+        <!--extra otros ataques-->
+        <div class="collapse" id="lista-mitm">
+            <div id="lista-malware-interior">
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Ataques Man-in-the-middle (MitM)</h5>
+                        <p class="texto-tarjeta">Ataques en los que un atacante se interpone entre dos partes que se comunican, interceptando y posiblemente modificando 
+                            la comunicación.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta"> Inyección SQL</h5>
+                        <p class="texto-tarjeta">Ataques que aprovechan vulnerabilidades en las aplicaciones web para insertar código SQL 
+                            malicioso en una base de datos, lo que puede llevar a la manipulación o robo de datos.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Hacking de Contraseñas</h5>
+                        <p class="texto-tarjeta">Ataques que buscan obtener contraseñas mediante fuerza bruta, diccionario, ataques de ingeniería social o 
+                            aprovechando vulnerabilidades en los sistemas.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Ataques de Fuerza Bruta</h5>
+                        <p class="texto-tarjeta">Ataques que intentan adivinar contraseñas o claves de acceso probando diferentes combinaciones hasta encontrar la correcta.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Ataques de Ingeniería Social</h5>
+                        <p class="texto-tarjeta">Ataques que manipulan a las personas para que realicen acciones o divulguen información confidencial, a menudo utilizando 
+                            la psicología y la manipulación emocional.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Ataques de Intermediarios</h5>
+                        <p class="texto-tarjeta">Ataques que aprovechan la vulnerabilidad de las conexiones de red para interceptar o modificar la comunicación entre dos partes.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Ataques de CriptoJacking</h5>
+                        <p class="texto-tarjeta">Ataques que utilizan la potencia informática de un sistema comprometido para minar criptomonedas sin el consentimiento del usuario.</p>
+                    </div>
+                </div>
+                <div class="virus">
+                    <div class="tarjeta-extra-cuerpo">
+                        <h5 class="titulo-tarjeta">Ataques de Suplantación de Identidad (Spoofing)</h5>
+                        <p class="texto-tarjeta">Ataques que falsifican la identidad de una fuente legítima para engañar a los usuarios o sistemas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-    <div class="tarjeta">
-        <div class="tarjeta-cuerpo">
-            <h5 class="titulo-tarjeta">Otros tipos de ataques</h5>
-            <p class="texto-tarjeta">Existen aún más tipos de ataques, algunos que buscan vulnerabilidades existentes en sitios web o aplicaciones y otros 
-                que no necesariamente están relacionados al uso de software, pero que aún así
-                están enfocados en la búsqueda del acceso y robo de información.
-            </p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#lista-mitm"
-            aria-expanded="false" aria-controls="lista-malware">Ver lista</button>
-        </div>
-    </div>
-    <div class="collapse" id="lista-mitm">
-        <div id="lista-malware-interior">
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Ataques Man-in-the-middle (MitM)</h5>
-                <p class="texto-tarjeta">Ataques en los que un atacante se interpone entre dos partes que se comunican, interceptando y posiblemente modificando 
-                    la comunicación.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta"> Inyección SQL</h5>
-                <p class="texto-tarjeta">Ataques que aprovechan vulnerabilidades en las aplicaciones web para insertar código SQL 
-                    malicioso en una base de datos, lo que puede llevar a la manipulación o robo de datos.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Hacking de Contraseñas</h5>
-                <p class="texto-tarjeta">Ataques que buscan obtener contraseñas mediante fuerza bruta, diccionario, ataques de ingeniería social o 
-                    aprovechando vulnerabilidades en los sistemas.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Ataques de Fuerza Bruta</h5>
-                <p class="texto-tarjeta">Ataques que intentan adivinar contraseñas o claves de acceso probando diferentes combinaciones hasta encontrar la correcta.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Ataques de Ingeniería Social</h5>
-                <p class="texto-tarjeta">Ataques que manipulan a las personas para que realicen acciones o divulguen información confidencial, a menudo utilizando 
-                    la psicología y la manipulación emocional.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Ataques de Intermediarios</h5>
-                <p class="texto-tarjeta">Ataques que aprovechan la vulnerabilidad de las conexiones de red para interceptar o modificar la comunicación entre dos partes.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Ataques de CriptoJacking</h5>
-                <p class="texto-tarjeta">Ataques que utilizan la potencia informática de un sistema comprometido para minar criptomonedas sin el consentimiento del usuario.</p>
-            </div>
-        </div>
-        <div class="virus">
-            <div class="tarjeta-cuerpo">
-                <h5 class="titulo-tarjeta">Ataques de Suplantación de Identidad (Spoofing)</h5>
-                <p class="texto-tarjeta">Ataques que falsifican la identidad de una fuente legítima para engañar a los usuarios o sistemas.</p>
-            </div>
-        </div>
-    </div>
-    </div>
+    <!--Prueba carrusel-->
 
-<!--Prueba carrusel-->
+    <section class="casos-de-ataques">
+        <h2>Casos importantes y recientes de ataques cibernéticos</h2>
+        <div class="carrusel">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/img/solarwinds.jpg" class="d-block w-100" alt="foto-solarwinds">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Caso Solarwinds (2020)</h5>
+                        <p>Un adversario del estado nación ruso obtuvo acceso a los sistemas de SolarWinds e implementó 
+                            actualizaciones con troyanos para el software Orion.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/sonypictures.jpg" class="d-block w-100" alt="foto-sonypictures">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ataque a sony pictures (2014)</h5>
+                        <p>un ciberataque masivo atribuido a hackers norcoreanos, quienes filtraron datos confidenciales, incluyendo correos electrónicos,
+                            guiones, películas inéditas y detalles personales de empleados.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/wannacry.jpg" class="d-block w-100" alt="foto-wannacry">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Caso Wannacry (2017)</h5>
+                        <p>Fue un ciberataque global de ransomware que afectó a miles de sistemas en más de 150 países, explotando una vulnerabilidad
+                            en Windows para cifrar datos y exigir rescates de bitcoin, causando perdidas millonarias y afectando hospitales, empresas y
+                            gobiernos.
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>    
+    
 
-<section class="carrusel">
-<h2>Casos importantes y recientes de ataques cibernéticos</h2>
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="assets/img/solarwinds.jpg" class="d-block w-100" alt="foto-solarwinds">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>Caso Solarwinds (2020)</h5>
-            <p>Un adversario del estado nación ruso obtuvo acceso a los sistemas de SolarWinds e implementó 
-                actualizaciones con troyanos para el software Orion.</p>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <img src="assets/img/sonypictures.jpg" class="d-block w-100" alt="foto-sonypictures">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>Ataque a sony pictures (2014)</h5>
-            <p>un ciberataque masivo atribuido a hackers norcoreanos, quienes filtraron datos confidenciales, incluyendo correos electrónicos,
-                guiones, películas inéditas y detalles personales de empleados.
-            </p>
-        </div>
-    </div>
-    <div class="carousel-item">
-        <img src="assets/img/wannacry.jpg" class="d-block w-100" alt="foto-wannacry">
-        <div class="carousel-caption d-none d-md-block">
-            <h5>Caso Wannacry (2017)</h5>
-            <p>Fue un ciberataque global de ransomware que afectó a miles de sistemas en más de 150 países, explotando una vulnerabilidad
-                en Windows para cifrar datos y exigir rescates de bitcoin, causando perdidas millonarias y afectando hospitales, empresas y
-                gobiernos.
-            </p>
-        </div>
-    </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-</section>
 
 
 <script src="assets/js/script.js"></script>
