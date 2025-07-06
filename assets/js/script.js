@@ -72,4 +72,20 @@ $(document).ready(function() {
         }
         
     })
+
+    $('#boton_contactar').click(function() {
+        //Recuperamos los valores de los input
+        let nombre = $('#nombre').val();
+        let correo = $('#correo').val();
+        let mensaje = $('#caja_texto').val();
+
+        // Validación si las variables están vacías entonces...
+        if (!nombre || !correo || !mensaje) {
+            alert('Por favor, asegúrate de llenar todos los campos.')
+        }//Si las variables tienen contenido entonces... 
+        else { 
+            alert('¡Gracias por contactarte con nosotros! Tu mensaje ha sido enviado.')
+        }
+    })
+
 })
