@@ -208,35 +208,188 @@
 
 
         <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            ...
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+    <!-- Seccion de modal con Test -->
+
+    <div class="modal fade" id="modalTest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-6" id="staticBackdropLabel">Test de Ciberseguridad: Aplicando lo aprendido</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title"><strong>Pregunta 1: </strong>Indique cual, de los siguientes ejemplos, corresponde a una contraseña robusta y recomendable de utilizar:</h6>
+                                <p class="card-text">
+                                    <ul style="list-style: lower-alpha;">
+                                        <li>
+                                            <input type="radio" name="pregunta1" id="pregunta1-a" value="0">
+                                            <label for="pregunta1-a">12345678</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta1" id="pregunta1-b" value="1">
+                                            <label for="pregunta1-b">Eif(oXIe&gz7=CH~</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta1" id="pregunta1-c" value="0">
+                                            <label for="pregunta1-c">password</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta1" id="pregunta1-d" value="0">
+                                            <label for="pregunta1-d">abcd1234</label>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div id="respuesta1Correcta" class="alert alert-success" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Correcta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">b) <i>Eif(oXIe&gz7=CH~</i></p>
+                                    <p class="mb-1">Es una contraseña que posee más de 12 caracteres, y combina diferentes tipos de caracteres (mayúsculas, minúsculas, números y caracteres especiales)</p>
+                                </div>
+                                <div id="respuesta1Error" class="alert alert-danger" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Incorrecta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">b) <i>Eif(oXIe&gz7=CH~</i></p>
+                                    <p class="mb-1">Es una contraseña que posee más de 12 caracteres, y combina diferentes tipos de caracteres (mayúsculas, minúsculas, números y caracteres especiales)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title"><strong>Pregunta 2: </strong>¿Cúal de las siguientes recomendaciones <strong>NO ES</strong> una buena práctica de protección en línea?</h6>
+                                <p class="card-text">
+                                    <ul style="list-style: lower-alpha;">
+                                        <li>
+                                            <input type="radio" name="pregunta2" id="pregunta2-a" value="0">
+                                            <label for="pregunta2-a">Utilizar un antivirus y un firewall en nuestra conexión a Internet</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta2" id="pregunta2-b" value="0">
+                                            <label for="pregunta2-b">Mantener siempre nuestro software actualizado</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta2" id="pregunta2-c" value="0">
+                                            <label for="pregunta2-c">Crear contraseñas que incluyan mayúsculas, minúscula, símbolos especiales y números</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta2" id="pregunta2-d" value="1">
+                                            <label for="pregunta2-d">Usar redes públicas para realizar operaciones bancarias o acceder a información sensible</label>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div id="respuesta2Correcta" class="alert alert-success" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Correcta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">d) <i>Usar redes públicas para realizar operaciones bancarias o acceder a información sensible</i></p>
+                                    <p class="mb-1">Siempre es recomendable evitar las redes públicas para acceder a Internet, sobre todo si es para realizar transacciones bancarias o acceder a información sensible. Y si es necesario conectarse a una red pública, es recomendable contar con un servicio de VPN para cifrar nuestra información.</p>
+                                </div>
+                                <div id="respuesta2Error" class="alert alert-danger" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Incorrecta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">d) <i>Usar redes públicas para realizar operaciones bancarias o acceder a información sensible</i></p>
+                                    <p class="mb-1">Siempre es recomendable evitar las redes públicas para acceder a Internet, sobre todo si es para realizar transacciones bancarias o acceder a información sensible. Y si es necesario conectarse a una red pública, es recomendable contar con un servicio de VPN para cifrar nuestra información.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title"><strong>Pregunta 3: Dentro de los distintos tipos de malware, podemos encontrar los siguientes ejemplos:</strong></h6>
+                                <p class="card-text">
+                                    <ul style="list-style: lower-alpha;">
+                                        <li>
+                                            <input type="radio" name="pregunta3" id="pregunta3-a" value="1">
+                                            <label for="pregunta3-a">Virus, Spyware, Gusanos y Ransomware</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta3" id="pregunta3-b" value="0">
+                                            <label for="pregunta3-b">Troyanos, Spear Phishing, Inyección SQL y Ataques DDoS</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta3" id="pregunta3-c" value="0">
+                                            <label for="pregunta3-c">Ataques de Denegación de Servicios (DDoS)</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta3" id="pregunta3-d" value="0">
+                                            <label for="pregunta3-d">Ataques de Fuerza Bruta, Inyección SQL y Hacking de Contraseñas</label>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div id="respuesta3Correcta" class="alert alert-success" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Correcta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">a) <i>Virus, Spyware, Gusanos y Ransomware</i></p>
+                                    <p class="mb-1">El malware corresponde a software malicioso, dentro de los que encontramos Virus, Spyware, Gusanos y Ransomware</p>
+                                </div>
+                                <div id="respuesta3Error" class="alert alert-danger" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Incorrecta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">a) <i>Virus, Spyware, Gusanos y Ransomware</i></p>
+                                    <p class="mb-1">El malware corresponde a software malicioso, dentro de los que encontramos Virus, Spyware, Gusanos y Ransomware</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title"><strong>Pregunta 4: Al decir "<i>es un ataque que sobrecarga un sistema o una red con tráfico, para que no pueda atender las solicitudes legítimas</i>", nos estamos refiriendo a:</strong></h6>
+                                <p class="card-text">
+                                    <ul style="list-style: lower-alpha;">
+                                        <li>
+                                            <input type="radio" name="pregunta4" id="pregunta4-a" value="0">
+                                            <label for="pregunta4-a">Ataque de Ingeniería Social</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta4" id="pregunta4-b" value="1">
+                                            <label for="pregunta4-b">Ataque DoS</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta4" id="pregunta4-c" value="0">
+                                            <label for="pregunta4-c">Whaling</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="pregunta4" id="pregunta4-d" value="0">
+                                            <label for="pregunta4-d">Ransomware</label>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <div id="respuesta4Correcta" class="alert alert-success" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Correcta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">b) <i>Ataque DoS</i></p>
+                                    <p class="mb-1">Los ataques de Denegación de Servicio, son los intentos maliciosos de interrumpir el funcionamiento normal de un sistema al inundarlo con tráfico ilegítimo. Y dentro de este tipo de amenaza encontramos los Ataques DoS y los Ataques DDoS</p>
+                                </div>
+                                <div id="respuesta4Error" class="alert alert-danger" style="display: none;">
+                                    <h6 class="alert-heading mb-2">Respuesta Incorrecta</h6>
+                                    <p class="mb-1">La respuesta correcta es:</p>
+                                    <p class="mb-1">b) <i>Ataque DoS</i></p>
+                                    <p class="mb-1">Los ataques de Denegación de Servicio, son los intentos maliciosos de interrumpir el funcionamiento normal de un sistema al inundarlo con tráfico ilegítimo. Y dentro de este tipo de amenaza encontramos los Ataques DoS y los Ataques DDoS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="enviarRespuestas">Enviar respuestas</button>
+                </div>
+            </div>
         </div>
     </div>
-    </div>
 
 
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/f8e1b20c3d.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap 5.3 -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
-    <!-- Script JavaScript -->
-    <script src="assets/js/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>     
 </body>
 </html>
