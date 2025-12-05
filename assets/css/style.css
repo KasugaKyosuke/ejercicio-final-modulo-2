@@ -41,34 +41,3 @@ body {
 .main-bg{
     background-color: #f8f8f8;
 }
-
-/*Página Comunes (Las modificaciones estéticas fueron solo para testeo)*/
-
-.tarjeta-cuerpo {
-    width: 18rem; /* Ancho de la tarjeta */
-    margin-bottom: 1rem; /* Margen inferior */
-    margin-left: 1rem;
-    background-color: rgb(78, 200, 204);
-    padding: 20px 20px 20px 20px;
-}
-
-.titulo-tarjeta {
-    color: navy; /* Color del título */
-}
-
-.texto-tarjeta {
-    font-size: 1rem; /* Tamaño de fuente del texto */
-    text-align: left; /* Justifica el texto */
-}
-
-#lista-malware-interior {
-    list-style: none;
-    display: flex;
-}
-
-/*Prueba carrusel*/
-
-#carouselExampleCaptions {
-    width: 400px;
-    text-shadow: 2px 2px 2px black ;
-}
